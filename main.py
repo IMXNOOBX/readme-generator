@@ -5,14 +5,13 @@ from colorama import init, Fore, Style, Cursor
 import argparse
 
 
-
+# Define everything. ik this isnt the best way to do, if you think you have a better way to do, pls pull a reques with your changes :D
 isdebug = False
 pkgjson = 'package.json'
-#ispkgjson = False
 debugc = Fore.BLUE + "[" + Fore.LIGHTBLUE_EX + \
     "DEBUG" + Fore.BLUE + "] - " + Fore.RESET
 
-#variables to store the info
+# variables to store the info
 rproject_name = ''
 rproject_version = ''
 rproject_description = ''
@@ -37,7 +36,20 @@ mainbannerc = "                           Made By: imxnoobx.xyz\n\n"
 def clear():
     os.system('cls' if os.name=='nt' else 'clear')
 
+    
 def checkPackageDotJson():
+    if os.path.isfile(pkgjson):
+        return True
+    else: return False
+
+def previewValues(string):
+    if isdebug: print(debugc + f"Preview Fuction called with args: {string}")
+    if string != '':
+        finalPreview = Fore.LIGHTBLACK_EX + '[' + string + '] ' + Fore.RESET
+    if isdebug: print(debugc + f"Preview Fuction returned: {finalPreview}")
+    return finalPreview
+
+def getPackageDotJson():
     global rproject_name
     global rproject_version
     global rproject_description
@@ -47,8 +59,7 @@ def checkPackageDotJson():
     global rproject_repository
     global rproject_website
     global rproject_license
-    if os.path.isfile(pkgjson):
-        #ispkgjson = True
+    if checkPackageDotJson():
         if isdebug: print(debugc + Fore.LIGHTMAGENTA_EX +
             'Package.json found, getting info!' + Fore.RESET)
         with open(pkgjson) as json_file:
@@ -66,13 +77,13 @@ def checkPackageDotJson():
 
 
             if "author" in pkg:
-                if isdebug: print(debugc + "Key 'scripts' exist in JSON data, value: " + pkg['author'])
+                if isdebug: print(debugc + "Key 'author' exist in JSON data, value: " + pkg['author'])
                 rproject_author = pkg['author']
             if "license" in pkg:
-                if isdebug: print(debugc + "Key 'scripts' exist in JSON data, value: " + pkg['license'])
+                if isdebug: print(debugc + "Key 'license' exist in JSON data, value: " + pkg['license'])
                 rproject_license = pkg['license']
             if "homepage" in pkg:
-                if isdebug: print(debugc + "Key 'scripts' exist in JSON data, value: " + pkg['homepage'])
+                if isdebug: print(debugc + "Key 'homepage' exist in JSON data, value: " + pkg['homepage'])
                 rproject_repository = pkg['homepage']
             if "scripts" in pkg:
                 asd = 0
@@ -82,16 +93,12 @@ def checkPackageDotJson():
                     print(rproject_scripts)
                     asd = asd + 1
 
-
-
-        return True
-    else: return False
     
 
 
 def generateReadmeDotMd():
-    checkPackageDotJson()
-    name = input("Project Name: " + rproject_name)
+    getPackageDotJson()
+    prName = input(f"Project Name: {previewValues(rproject_name)}")
 
 
 
@@ -112,15 +119,14 @@ def generateReadmeDotMd():
 
 parser = argparse.ArgumentParser(description='The App description. if i forgot to fill this plis tell me')
 parser.add_argument('init', type=str,
-                    help='initialise riadme programthat programsthe ridme')
+                    help='Initialize the readme generator program')
 
 parser.add_argument('-d', '--debug', action='store_true',
                     help='Will log every action done by the program')
 
 args = parser.parse_args()
 
-
-if args.init == '-d' or '--debug': 
+if args.debug == '-d' or '--debug': #doesnt work. it passes every time
     isdebug = True
     if isdebug: print(debugc + "Debug mode enabled!")
 
@@ -129,4 +135,5 @@ if args.init == 'init':
     print(mainbanner)
     print(mainbannerc)
     generateReadmeDotMd()
+
 
