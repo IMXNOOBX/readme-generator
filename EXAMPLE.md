@@ -2,8 +2,15 @@
 
 [Releases][release]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Issues](issues)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Homepage](#readme)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Pull Request][pulls]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Wiki][wiki]&nbsp;&nbsp;&nbsp;
 
-
-[![GitHub release][img-version-badge]][repo] [![Gitter][img-gitter-badge]][gitter] [![Build Status][img-travis-ci]][travis-ci] [![Code of Conduct][coc-badge]][coc] [![PRs Welcome][prs-badge]][prs]  <a href="#patched-fonts" title=""><img src="https://raw.githubusercontent.com/wiki/ryanoasis/nerd-fonts/images/faux-shield-badge-os-logos.svg?sanitize=true" alt="Nerd Fonts - OS Support"></a> [![Twitter][twitter-badge]][twitter-intent]
+<a href="{repourl}" title="">
+    <img src="https://img.shields.io/badge/version-{version}-blue.svg?style=for-the-badge&logo=appveyor" alt="Version - {version}">
+</a>
+<a href="{repourl}" title="">
+    <img src="https://img.shields.io/badge/documentation-yes-brightgreen.svg?style=for-the-badge" alt="Maintenance">
+</a>
+<a href="{repourl}/blob/main/LICENSE.md" target="_blank">
+    <img alt="License: ISC" src="https://img.shields.io/github/license/{repourl}?style=for-the-badge" />
+</a>
 
 </div>
 
@@ -35,5 +42,8 @@ This project is [ISC](https://github.com/IMXNOOBX/modest-menu-snippets/blob/mast
 ## 
 
 Star this project ⭐️ if it helped you!
+<div align="right">
+[💎](https://github.com/IMXNOOBX/readme-generator)
+</div>
 
 <!-- Footer end -->
