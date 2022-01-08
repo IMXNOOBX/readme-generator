@@ -1,6 +1,6 @@
 
 <div align="center">
-[Releases](https://github.com/IMXNOOBX/dis-logs/releases)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Issues](https://github.com/IMXNOOBX/dis-logs/issues)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Homepage](https://github.com/IMXNOOBX/dis-logs#readme)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Pull Request](https://github.com/IMXNOOBX/dis-logs/pulls)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Wiki](https://github.com/IMXNOOBX/dis-logs/wiki)&nbsp;&nbsp;&nbsp;
+[<a href='https://github.com/IMXNOOBX/dis-logs/releases'>Releases</a>]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[<a href='https://github.com/IMXNOOBX/dis-logs/issues'>Issues</a>]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[<a href='https://github.com/IMXNOOBX/dis-logs#readme'>Homepage</a>]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[<a href='https://github.com/IMXNOOBX/dis-logs/pulls'>Pull Request</a>]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[<a href='https://github.com/IMXNOOBX/dis-logs/wiki'>Wiki</a>]&nbsp;&nbsp;&nbsp;
 
 <a href="https://github.com/IMXNOOBX/dis-logs" title="">
     <img src="https://img.shields.io/badge/version--blue.svg?style=for-the-badge&logo=appveyor" alt="Version - ">
@@ -12,7 +12,9 @@
     <img alt="License: ISC" src="https://img.shields.io/github/license/IMXNOOBX/dis-logs?style=for-the-badge" />
 </a>
 </div>
-    
+
+
+### 📘 Description
 <div align="center">
 Simple Discord Webhook logger for your app
 </div>

@@ -4,7 +4,7 @@ def buildReadmeDotMd(prDescription, prHomePage, prDoscsUrl, prAuthorName, prGith
     global finalReadme
     finalReadme = f"""
 <div align="center">
-[Releases]({rproject_url}/releases)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Issues]({rproject_url}/issues)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Homepage]({rproject_url}#readme)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Pull Request]({rproject_url}/pulls)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Wiki]({rproject_url}/wiki)&nbsp;&nbsp;&nbsp;
+[<a href='{rproject_url}/releases'>Releases</a>]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[<a href='{rproject_url}/issues'>Issues</a>]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[<a href='{rproject_url}#readme'>Homepage</a>]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[<a href='{rproject_url}/pulls'>Pull Request</a>]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[<a href='{rproject_url}/wiki'>Wiki</a>]&nbsp;&nbsp;&nbsp;
 
 <a href="{rproject_url}" title="">
     <img src="https://img.shields.io/badge/version-{prVersion}-blue.svg?style=for-the-badge&logo=appveyor" alt="Version - {prVersion}">
@@ -19,6 +19,7 @@ def buildReadmeDotMd(prDescription, prHomePage, prDoscsUrl, prAuthorName, prGith
     """
     if prDescription != '':
         finalReadme = finalReadme + f"""
+## 📘 Description
 <div align="center">
 {prDescription}
 </div>
