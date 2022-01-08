@@ -6,15 +6,17 @@ def buildReadmeDotMd(prDescription, prHomePage, prDoscsUrl, prAuthorName, prGith
 <div align="center">
 [<a href='{rproject_url}/releases'>Releases</a>]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[<a href='{rproject_url}/issues'>Issues</a>]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[<a href='{rproject_url}#readme'>Homepage</a>]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[<a href='{rproject_url}/pulls'>Pull Request</a>]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[<a href='{rproject_url}/wiki'>Wiki</a>]&nbsp;&nbsp;&nbsp;
 
-<a href="{rproject_url}" title="">
-    <img src="https://img.shields.io/badge/version-{prVersion}-blue.svg?style=for-the-badge&logo=appveyor" alt="Version - {prVersion}">
-</a>
-<a href="{rproject_url}" title="">
-    <img src="https://img.shields.io/badge/documentation-yes-brightgreen.svg?style=for-the-badge" alt="Maintenance">
-</a>
-<a href="{rproject_url}/LICENSE.md" target="_blank">
-    <img alt="License: ISC" src="https://img.shields.io/github/license/{getLicenseBadgeThing(rproject_url)}?style=for-the-badge" />
-</a>
+</div>
+<div align="center">
+    <a href="{rproject_url}" title="">
+        <img src="https://img.shields.io/badge/version-{prVersion}-blue.svg?style=for-the-badge&logo=appveyor" alt="Version - {prVersion}">
+    </a>
+    <a href="{rproject_url}" title="">
+        <img src="https://img.shields.io/badge/documentation-yes-brightgreen.svg?style=for-the-badge" alt="Maintenance">
+    </a>
+    <a href="{rproject_url}/LICENSE.md" target="_blank">
+        <img alt="License: ISC" src="https://img.shields.io/github/license/{getLicenseBadgeThing(rproject_url)}?style=for-the-badge" />
+    </a>
 </div>
     """
     if prDescription != '':
@@ -55,7 +57,13 @@ This project is [{prLicenseName}]({rproject_url}/blob/master/LICENSE) licensed.
 ## 
 
 ***
-_Star this project ⭐️ if it helped you!_<p align="right">[💎](https://github.com/IMXNOOBX/readme-generator)</p>
+<div style="display: flex; justify-content: space-between;">
+_Star this project ⭐️ if it helped you!_ 
+<p align="right">[💎](https://github.com/IMXNOOBX/readme-generator)</p>
+</div>
+
+
+<!-- Made with: https://github.com/IMXNOOBX/readme-generator - ISC - 2022 - IMXNOOBX -->
     """
     if checkFileExist.checkFileExists('readme.md'):
         os.remove("readme.md")
