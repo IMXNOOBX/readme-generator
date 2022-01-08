@@ -12,7 +12,29 @@
     <img alt="License: ISC" src="https://img.shields.io/github/license/?style=for-the-badge" />
 </a>
 </div>
-    ## 
+    
+<div align="center">
+Simple Discord Webhook logger for your app
+</div>
+        
+### 🏠 [Homepage](https://github.com/IMXNOOBX/dis-logs#readme)
+        
+## 🌠 [Documents](https://github.com/IMXNOOBX/dis-logs)
+        
+## Author
+
+👤 ****
+
+* Github: [@](https://github.com/)
+
+
+## 📝 License
+
+Copyright © 2022 [](https://github.com/).<br />
+This project is [ISC](/blob/master/LICENSE) licensed.
+
+## 
+
 ***
 _Star this project ⭐️ if it helped you!_<p align="right">[💎](https://github.com/IMXNOOBX/readme-generator)</p>
     

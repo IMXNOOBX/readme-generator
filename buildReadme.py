@@ -1,6 +1,6 @@
 from main import *
 
-def buildReadmeDotMd():
+def buildReadmeDotMd(prDescription, prHomePage, prDoscsUrl, prAuthorName, prWebSite, prLicenseName):
     global finalReadme
     finalReadme = f"""
 <div align="center">
@@ -50,7 +50,9 @@ def buildReadmeDotMd():
 Copyright © {now.year} [{prGithubUsername}](https://github.com/{prGithubUsername}).<br />
 This project is [{prLicenseName}]({rproject_url}/blob/master/LICENSE) licensed.
 """
-    finalReadme = finalReadme + f"""## 
+    finalReadme = finalReadme + f"""
+## 
+
 ***
 _Star this project ⭐️ if it helped you!_<p align="right">[💎](https://github.com/IMXNOOBX/readme-generator)</p>
     """
