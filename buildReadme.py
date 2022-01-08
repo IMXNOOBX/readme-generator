@@ -12,7 +12,7 @@ def buildReadmeDotMd():
 <a href="{rproject_url}" title="">
     <img src="https://img.shields.io/badge/documentation-yes-brightgreen.svg?style=for-the-badge" alt="Maintenance">
 </a>
-<a href="{rproject_url}/blob/main/LICENSE.md" target="_blank">
+<a href="{rproject_url}/LICENSE.md" target="_blank">
     <img alt="License: ISC" src="https://img.shields.io/github/license/{getLicenseBadgeThing(rproject_url)}?style=for-the-badge" />
 </a>
 </div>
