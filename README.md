@@ -2,15 +2,18 @@
 <div align="center">
 [<a href='https://github.com/IMXNOOBX/dis-logs/releases'>Releases</a>]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[<a href='https://github.com/IMXNOOBX/dis-logs/issues'>Issues</a>]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[<a href='https://github.com/IMXNOOBX/dis-logs#readme'>Homepage</a>]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[<a href='https://github.com/IMXNOOBX/dis-logs/pulls'>Pull Request</a>]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[<a href='https://github.com/IMXNOOBX/dis-logs/wiki'>Wiki</a>]&nbsp;&nbsp;&nbsp;
 
-<a href="https://github.com/IMXNOOBX/dis-logs" title="">
-    <img src="https://img.shields.io/badge/version--blue.svg?style=for-the-badge&logo=appveyor" alt="Version - ">
-</a>
-<a href="https://github.com/IMXNOOBX/dis-logs" title="">
-    <img src="https://img.shields.io/badge/documentation-yes-brightgreen.svg?style=for-the-badge" alt="Maintenance">
-</a>
-<a href="https://github.com/IMXNOOBX/dis-logs/LICENSE.md" target="_blank">
-    <img alt="License: ISC" src="https://img.shields.io/github/license/IMXNOOBX/dis-logs?style=for-the-badge" />
-</a>
+</div>
+
+<div align="center">
+    <a href="https://github.com/IMXNOOBX/dis-logs" title="">
+        <img src="https://img.shields.io/badge/version--blue.svg?style=for-the-badge&logo=appveyor" alt="Version - ">
+    </a>
+    <a href="https://github.com/IMXNOOBX/dis-logs" title="">
+        <img src="https://img.shields.io/badge/documentation-yes-brightgreen.svg?style=for-the-badge" alt="Maintenance">
+    </a>
+    <a href="https://github.com/IMXNOOBX/dis-logs/LICENSE.md" target="_blank">
+        <img alt="License: ISC" src="https://img.shields.io/github/license/IMXNOOBX/dis-logs?style=for-the-badge" />
+    </a>
 </div>
 
 
