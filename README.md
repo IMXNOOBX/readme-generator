@@ -8,7 +8,7 @@
 <a href="" title="">
     <img src="https://img.shields.io/badge/documentation-yes-brightgreen.svg?style=for-the-badge" alt="Maintenance">
 </a>
-<a href="/blob/main/LICENSE.md" target="_blank">
+<a href="LICENSE.md" target="_blank">
     <img alt="License: ISC" src="https://img.shields.io/github/license/?style=for-the-badge" />
 </a>
 </div>
