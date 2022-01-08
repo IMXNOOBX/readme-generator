@@ -37,9 +37,9 @@ def buildReadmeDotMd(prDescription, prHomePage, prDoscsUrl, prAuthorName, prGith
         """
     if prAuthorName != '':
         finalReadme = finalReadme + f"""
-## Author
+## 👤 Author
 
-👤 **{prGithubUsername}**
+ **{prGithubUsername}**
 
 * Github: [@{prGithubUsername}](https://github.com/{prGithubUsername})
 """
@@ -55,12 +55,10 @@ This project is [{prLicenseName}]({rproject_url}/blob/master/LICENSE) licensed.
 """
     finalReadme = finalReadme + f"""
 ## 
+_Star this project ⭐️ if it helped you!_
 
 ***
-<div style="display: flex; justify-content: space-between;">
-_Star this project ⭐️ if it helped you!_ 
 <p align="right">[💎](https://github.com/IMXNOOBX/readme-generator)</p>
-</div>
 
 
 <!-- Made with: https://github.com/IMXNOOBX/readme-generator - ISC - 2022 - IMXNOOBX -->
