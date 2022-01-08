@@ -7,6 +7,10 @@ import sys
 import time
 import datetime
 
+import buildReadme
+import getPackageJson
+import checkFileExist
+
 # Define everything. ik this isnt the best way to do, if you think you have a better way to do, pls pull a reques with your changes :D
 isdebug = False
 scriptPath = os.path.dirname(os.path.realpath(sys.argv[0]))
@@ -82,13 +86,6 @@ def getLicenseBadgeThing(url):
         cleanedRepoUrl = url.partition(f"github.com/")[2]
         if isdebug: print(debugc + f"function 'getLicenseBadgeThing(url)' cleaned the github badge, result: {cleanedRepoUrl}") 
         return cleanedRepoUrl
-       
-
-def checkFileExists(filename):
-    if isdebug: print(debugc + f"Called function 'checkPackageDotJson()' to check if '{filename}' exist")
-    if os.path.isfile(filename):
-        return True
-    else: return False
 
 def previewValues(string):
     finalPreview = ''
@@ -97,53 +94,6 @@ def previewValues(string):
         finalPreview = Fore.LIGHTBLACK_EX + '(' + string + ') ' + Fore.RESET
     if isdebug: print(debugc + f"Preview Fuction returned: {finalPreview}")
     return finalPreview
-    
-
-def getPackageDotJson():
-    global rproject_name
-    global rproject_version
-    global rproject_description
-    global rproject_dependencies
-    global rproject_scripts
-    global rproject_author
-    global rproject_githubusr
-    global rproject_url
-    global rproject_repository
-    global rproject_website
-    global rproject_license
-    if checkFileExists(pkgjson):
-        if isdebug: print(debugc + Fore.LIGHTMAGENTA_EX +
-            'Package.json found, getting info!' + Fore.RESET)
-        with open(pkgjson) as json_file:
-            pkg = json.load(json_file)
-            if "name" in pkg:
-                if isdebug: print(debugc + "Key 'name' exist in JSON data, value: " + pkg['name'])
-                rproject_name = pkg['name']
-            if "version" in pkg:
-                if isdebug: print(debugc + "Key 'version' exist in JSON data, value: " + pkg['version'])
-                rproject_version = pkg['version']
-            if "description" in pkg:
-                if isdebug: print(debugc + "Key 'description' exist in JSON data, value: " + pkg['description'])
-                rproject_description = pkg['description']
-            if "homepage" in pkg: #Two birds with one shot 
-                if isdebug: print(debugc + "Key 'homepage' exist in JSON data, value: " + pkg['homepage'])
-                rproject_repository = pkg['homepage']
-                rproject_githubusr = getGithubUsername(rproject_repository)
-                rproject_url = getGithubRepo(rproject_repository)
-
-            if "author" in pkg:
-                if isdebug: print(debugc + "Key 'author' exist in JSON data, value: " + pkg['author'])
-                rproject_author = pkg['author']
-            if "license" in pkg:
-                if isdebug: print(debugc + "Key 'license' exist in JSON data, value: " + pkg['license'])
-                rproject_license = pkg['license']
-            if "scripts" in pkg:
-                asd = 0
-                for sc in pkg['scripts']:
-                    if isdebug: print(debugc + "Key 'scripts' (" + str(asd) + ") exist in JSON data, value: " + pkg['scripts'][sc])
-                    #rproject_scripts = pkg['scripts'][sc].join(rproject_scripts)
-                    #print(rproject_scripts)
-                    asd = asd + 1
     
 
 
@@ -159,7 +109,7 @@ def generateReadmeDotMd():
     global prLicenseName
     global prLicenseUrl
     global prIssuesUrl
-    getPackageDotJson()
+    getPackageJson.getPackageDotJson()
     prName = input(f"√ [🍭] Project name: {previewValues(rproject_name)}")
     if prName == '' and rproject_name != '':
         prName = rproject_name
@@ -172,6 +122,8 @@ def generateReadmeDotMd():
     prHomePage = input(f"√ [🏡] Project home page: {previewValues(rproject_repository)}")
     if prHomePage == '' and rproject_repository != '':
         prHomePage = rproject_repository
+    elif rproject_repository == '':
+        rproject_url = getGithubRepo(prHomePage)
     prDoscsUrl = input(f"√ [🌠] Project documentation url/page: {previewValues(rproject_url)}")
     if prDoscsUrl == '' and rproject_url != '':
         prDoscsUrl = rproject_url
@@ -191,68 +143,9 @@ def generateReadmeDotMd():
     prIssuesUrl = input(f"√ [📬] Project issues url: {previewValues('')}")
 
     animated_loading('Loading the readme.md', 10)
-    buildReadmeDotMd()
+    buildReadme.buildReadmeDotMd()
 
 
-def buildReadmeDotMd():
-    global finalReadme
-    finalReadme = f"""
-<div align="center">
-[Releases]({rproject_url}/releases)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Issues]({rproject_url}/issues)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Homepage]({rproject_url}#readme)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Pull Request]({rproject_url}/pulls)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Wiki]({rproject_url}/wiki)&nbsp;&nbsp;&nbsp;
-
-<a href="{rproject_url}" title="">
-    <img src="https://img.shields.io/badge/version-{prVersion}-blue.svg?style=for-the-badge&logo=appveyor" alt="Version - {prVersion}">
-</a>
-<a href="{rproject_url}" title="">
-    <img src="https://img.shields.io/badge/documentation-yes-brightgreen.svg?style=for-the-badge" alt="Maintenance">
-</a>
-<a href="{rproject_url}/blob/main/LICENSE.md" target="_blank">
-    <img alt="License: ISC" src="https://img.shields.io/github/license/{getLicenseBadgeThing(rproject_url)}?style=for-the-badge" />
-</a>
-</div>
-    """
-    if prDescription != '':
-        finalReadme = finalReadme + f"""
-<div align="center">
-{prDescription}
-</div>
-        """
-
-    if prHomePage != '':
-        finalReadme = finalReadme + f"""
-### 🏠 [Homepage]({prHomePage})
-        """
-    if prDoscsUrl != '':
-        finalReadme = finalReadme + f"""
-## 🌠 [Documents]({prDoscsUrl})
-        """
-    if prAuthorName != '':
-        finalReadme = finalReadme + f"""
-## Author
-
-👤 **{prGithubUsername}**
-
-* Github: [@{prGithubUsername}](https://github.com/{prGithubUsername})
-"""
-    if prWebSite != '':
-        finalReadme = finalReadme + f"* Website: {prWebSite}"
-
-    if prLicenseName != '':
-        finalReadme = finalReadme + f"""\n
-## 📝 License
-
-Copyright © {now.year} [{prGithubUsername}](https://github.com/{prGithubUsername}).<br />
-This project is [{prLicenseName}]({rproject_url}/blob/master/LICENSE) licensed.
-"""
-    finalReadme = finalReadme + f"""## 
-***
-_Star this project ⭐️ if it helped you!_<p align="right">[💎](https://github.com/IMXNOOBX/readme-generator)</p>
-    """
-    if checkFileExists('readme.md'):
-        os.remove("readme.md")
-    file = open("README.md", "w", encoding='utf-8') 
-    file.write(finalReadme) 
-    file.close() 
 
 
 
@@ -285,7 +178,7 @@ def main():
 
     if args.init == 'init':
         if isdebug: print(debugc + f"Script started in: {scriptPath}")
-        if checkFileExists('readme.md'):
+        if checkFileExist.checkFileExists('readme.md'):
             print('[❌] - Readme file found! it will be overwritten if you continue')
             input()
         print(mainbanner)
