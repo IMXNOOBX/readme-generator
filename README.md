@@ -23,18 +23,22 @@ Simple Discord Webhook logger for your app
         
 ## Author
 
-👤 ****
+👤 **IMXNOOBX**
 
-* Github: [@](https://github.com/)
+* Github: [@IMXNOOBX](https://github.com/IMXNOOBX)
 
 
 ## 📝 License
 
-Copyright © 2022 [](https://github.com/).<br />
+Copyright © 2022 [IMXNOOBX](https://github.com/IMXNOOBX).<br />
 This project is [ISC](/blob/master/LICENSE) licensed.
 
 ## 
 
 ***
-_Star this project ⭐️ if it helped you!_<p align="right">[💎](https://github.com/IMXNOOBX/readme-generator)</p>
+
+<a>
+  <p align="right">_Star this project ⭐️ if it helped you!_</p>
+  <p align="right">[💎](https://github.com/IMXNOOBX/readme-generator)</p>
+</a>
     

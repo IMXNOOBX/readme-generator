@@ -1,6 +1,6 @@
 from main import *
 
-def buildReadmeDotMd(prDescription, prHomePage, prDoscsUrl, prAuthorName, prWebSite, prLicenseName):
+def buildReadmeDotMd(prDescription, prHomePage, prDoscsUrl, prAuthorName, prGithubUsername, prWebSite, prLicenseName):
     global finalReadme
     finalReadme = f"""
 <div align="center">
