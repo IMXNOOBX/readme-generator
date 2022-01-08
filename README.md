@@ -1,15 +1,15 @@
 
 <div align="center">
-[Releases](/releases)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Issues](/issues)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Homepage](#readme)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Pull Request](/pulls)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Wiki](/wiki)&nbsp;&nbsp;&nbsp;
+[Releases](https://github.com/IMXNOOBX/dis-logs/releases)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Issues](https://github.com/IMXNOOBX/dis-logs/issues)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Homepage](https://github.com/IMXNOOBX/dis-logs#readme)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Pull Request](https://github.com/IMXNOOBX/dis-logs/pulls)&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[Wiki](https://github.com/IMXNOOBX/dis-logs/wiki)&nbsp;&nbsp;&nbsp;
 
-<a href="" title="">
+<a href="https://github.com/IMXNOOBX/dis-logs" title="">
     <img src="https://img.shields.io/badge/version--blue.svg?style=for-the-badge&logo=appveyor" alt="Version - ">
 </a>
-<a href="" title="">
+<a href="https://github.com/IMXNOOBX/dis-logs" title="">
     <img src="https://img.shields.io/badge/documentation-yes-brightgreen.svg?style=for-the-badge" alt="Maintenance">
 </a>
-<a href="/LICENSE.md" target="_blank">
-    <img alt="License: ISC" src="https://img.shields.io/github/license/?style=for-the-badge" />
+<a href="https://github.com/IMXNOOBX/dis-logs/LICENSE.md" target="_blank">
+    <img alt="License: ISC" src="https://img.shields.io/github/license/IMXNOOBX/dis-logs?style=for-the-badge" />
 </a>
 </div>
     
@@ -31,14 +31,10 @@ Simple Discord Webhook logger for your app
 ## 📝 License
 
 Copyright © 2022 [IMXNOOBX](https://github.com/IMXNOOBX).<br />
-This project is [ISC](/blob/master/LICENSE) licensed.
+This project is [ISC](https://github.com/IMXNOOBX/dis-logs/blob/master/LICENSE) licensed.
 
 ## 
 
 ***
-
-<a>
-  <p align="right">_Star this project ⭐️ if it helped you!_</p>
-  <p align="right">[💎](https://github.com/IMXNOOBX/readme-generator)</p>
-</a>
+_Star this project ⭐️ if it helped you!_<p align="right">[💎](https://github.com/IMXNOOBX/readme-generator)</p>
     

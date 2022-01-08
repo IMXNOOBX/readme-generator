@@ -187,7 +187,7 @@ def generateReadmeDotMd():
     prIssuesUrl = input(f"√ [📬] Project issues url: {previewValues('')}")
 
     animated_loading('Loading the readme.md', 10)
-    buildReadme.buildReadmeDotMd(prDescription, prHomePage, prDoscsUrl, prAuthorName, prGithubUsername, prWebSite, prLicenseName)
+    buildReadme.buildReadmeDotMd(prDescription, prHomePage, prDoscsUrl, prAuthorName, prGithubUsername, prWebSite, prLicenseName, rproject_url)
 
 
 
