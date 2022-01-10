@@ -58,7 +58,7 @@ This project is [{vars.prLicenseName}]({vars.rproject_url}/blob/master/LICENSE) 
 _Star this project ⭐️ if it helped you!_
 
 ***
-<p align="right">[💎](https://github.com/IMXNOOBX/readme-generator)</p>
+<p align="right"><a href='https://github.com/IMXNOOBX/readme-generator'>💎</a></p>
 
 
 <!-- Made with: https://github.com/IMXNOOBX/readme-generator - ISC - 2022 - IMXNOOBX -->

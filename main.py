@@ -47,7 +47,7 @@ def main():
             print(vars.debugc + f"Script started in: {vars.scriptPath}")
         if func.checkFileExists('readme.md'):
             print('[❌] - Readme file found! it will be overwritten if you continue')
-            input("Press Enter to continue...")
+            input()
         print(vars.mainbanner)
         func.generateReadmeDotMd()
 

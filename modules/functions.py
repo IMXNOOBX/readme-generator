@@ -179,6 +179,6 @@ def generateReadmeDotMd():
 
     vars.prIssuesUrl = input(Fore.GREEN+"√"+Fore.RESET+f"[📬] Project issues url: {previewValues('')}")
 
-    animated_loading('Loading the readme.md', 10)
+    animated_loading('Loading the readme.md', 5)
     buildReadme.buildReadmeDotMd()
     print("\r"+Fore.GREEN+"√"+Fore.RESET+" [📖] Readme Successfully Generated!")
