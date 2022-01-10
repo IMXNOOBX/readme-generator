@@ -1,4 +1,3 @@
-
 import os
 import argparse
 import sys
@@ -9,7 +8,17 @@ import datetime
 import modules.functions as func
 import modules.vars as vars
 
-# Define everything. ik this isnt the best way to do, if you think you have a better way to do, pls pull a reques with your changes :D
+
+__author__ = "IMXNOOBX"
+__copyright__ = "Copyright 2022, The Readme Generator Project"
+__credits__ = ["IMXNOOBX"]
+__license__ = "ISC"
+__version__ = "1.0.4"
+__maintainer__ = "IMXNOOBX"
+__email__ = "contact@imxnoobx.xyz"
+__status__ = "Production"
+
+
 now = datetime.datetime.now()
 
 # init
@@ -18,7 +27,7 @@ now = datetime.datetime.now()
 def main():
     func.clear()
     parser = argparse.ArgumentParser(
-        description='The App description. if i forgot to fill this plis tell me')
+        description='A Simple Advanced readme generator for your Projects')
     parser.add_argument('init', type=str,
                         help='Initialize the readme generator program')
 
