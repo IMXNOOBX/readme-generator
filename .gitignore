@@ -1,2 +1,5 @@
-__pycache__
-__pycache__/*
+__pycache__/*.pyc
+__pycache__/*.pyo
+modules/__pycache__/*.pyc
+modules/__pycache__/*.pyo
+

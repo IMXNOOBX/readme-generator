@@ -1,4 +1,3 @@
-import main
 import os
 import sys
 import modules.buildReadme as buildReadme
@@ -28,10 +27,10 @@ def animated_loading(text, times):
     if vars.isdebug:
         print(vars.debugc +
               f"Called function 'animated_loading({text}, {times})'")
-    chars = "/—\|"
+    chars = "⣾⣽⣻⢿⡿⣟⣯⣷⠁⠂⠄⡀⢀⠠⠐⠈"
     for i in range(times):
         for char in chars:
-            sys.stdout.write(f'\r{text} {char}')
+            sys.stdout.write(f'\r{text} {Fore.GREEN+char+Fore.RESET}')
             time.sleep(.1)
             sys.stdout.flush()
 
