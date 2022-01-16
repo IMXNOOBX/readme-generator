@@ -21,6 +21,7 @@ def buildReadmeDotMd():
         """
     if vars.prDescription != '':
         vars.finalReadme = vars.finalReadme + f"""
+
 ## 📘 Description
 <div align="center">
 {vars.prDescription}
@@ -30,11 +31,25 @@ def buildReadmeDotMd():
     if vars.prHomePage != '':
         vars.finalReadme = vars.finalReadme + f"""
 ### 🏠 [Homepage]({vars.prHomePage})
+
+Visit this project repository [here]({vars.prHomePage}) and let us know your opinion :D
         """
     if vars.prDoscsUrl != '':
         vars.finalReadme = vars.finalReadme + f"""
 ## 🌠 [Documents]({vars.prDoscsUrl})
+
+Check out our documentation for more information!
+* Click Here -> [📚 Docs]({vars.prDoscsUrl}) 
         """
+
+    if vars.prIssuesUrl != '':
+        vars.finalReadme = vars.finalReadme + f"""\n
+## 🌟 Issues/Contribute
+
+* Report your issues here: [Report Here]({vars.finalIssues})
+* Contribute with your amazing ideas: [Contribute Here]({vars.finalPulls})
+"""
+
     if vars.prAuthorName != '':
         vars.finalReadme = vars.finalReadme + f"""
 ## 👤 Author
@@ -58,7 +73,9 @@ This project is [{vars.prLicenseName}]({vars.rproject_url}/blob/master/LICENSE) 
 _Star this project ⭐️ if it helped you!_
 
 ***
-<p align="right"><a href='https://github.com/IMXNOOBX/readme-generator'>💎</a></p>
+<div align="right">
+<a href='https://github.com/IMXNOOBX/readme-generator'>💎</a>
+</div>
 
 
 <!-- Made with: https://github.com/IMXNOOBX/readme-generator - ISC - 2022 - IMXNOOBX -->

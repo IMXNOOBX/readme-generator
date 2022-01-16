@@ -5,7 +5,7 @@
 </div>
 <div align="center">
 <a href="https://github.com/IMXNOOBX/readme-generator" title="">
-<img src="https://img.shields.io/badge/version-1.0.4-blue.svg?style=for-the-badge&logo=appveyor" alt="Version - 1.0.4">
+<img src="https://img.shields.io/badge/version-1.0.5-blue.svg?style=for-the-badge&logo=appveyor" alt="Version - 1.0.5">
 </a>
 <a href="https://github.com/IMXNOOBX/readme-generator" title="">
 <img src="https://img.shields.io/badge/documentation-yes-brightgreen.svg?style=for-the-badge" alt="Maintenance">
@@ -14,21 +14,38 @@
 <img alt="License: ISC" src="https://img.shields.io/github/license/IMXNOOBX/readme-generator?style=for-the-badge" />
 </a>
 </div>
-        
+
+<div align="center">
+<img src="./readme-generator.png" alt="Readme Generator Banner" style="width:500px"></img>
+</div>
+
 ## 📘 Description
 <div align="center">
-Simple readme generator
+Simple readme generator that will help you creating thoose amazing repositories
 </div>
         
-### 🏠 [Homepage](https://github.com/IMXNOOBX/readme-generator#readme)
+## 🏠 [Homepage](https://github.com/IMXNOOBX/readme-generator#readme)
+
+Visit this project repository [here](https://github.com/IMXNOOBX/readme-generator#readme) and let us know your opinion :D
         
 ## 🌠 [Documents](https://github.com/IMXNOOBX/readme-generator)
-        
-## 👤 Author
 
- **IMXNOOBX**
+Check out our documentation for more information!
+
+* Click Here -> [📚 Docs](https://github.com/IMXNOOBX/readme-generator) 
+        
+
+## 🌟 Issues/Contribute
+
+* Report your issues here: [Report Here](https://github.com/IMXNOOBX/readme-generator/issues)
+* Contribute with your amazing ideas: [Contribute Here](https://github.com/IMXNOOBX/readme-generator/pulls)
+
+## 👤 Author & Colaborator
+
+ **IMXNOOBX & PARALLAX**
 
 * Github: [@IMXNOOBX](https://github.com/IMXNOOBX)
+* Github: [@Parallax](https://github.com/equisde)
 * Website: https://imxnoobx.xyz
 
 ## 📝 License
@@ -40,7 +57,9 @@ This project is [ISC](https://github.com/IMXNOOBX/readme-generator/blob/master/L
 _Star this project ⭐️ if it helped you!_
 
 ***
-<p align="right"><a href='https://github.com/IMXNOOBX/readme-generator'>💎</a></p>
+<div align="right">
+<a href='https://github.com/IMXNOOBX/readme-generator'>💎</a>
+</div>
 
 
 <!-- Made with: https://github.com/IMXNOOBX/readme-generator - ISC - 2022 - IMXNOOBX -->

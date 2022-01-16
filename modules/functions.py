@@ -124,61 +124,68 @@ def getPackageDotJson():
                     print(
                         vars.debugc + "Key 'license' exist in JSON data, value: " + pkg['license'])
                 vars.rproject_license = pkg['license']
-            if "scripts" in pkg:
-                asd = 0
-                for sc in pkg['scripts']:
-                    if vars.isdebug:
-                        print(vars.debugc + "Key 'scripts' (" + str(asd) +
-                              ") exist in JSON data, value: " + pkg['scripts'][sc])
-                    #rproject_scripts = pkg['scripts'][sc].join(rproject_scripts)
-                    # print(rproject_scripts)
-                    asd = asd + 1
+#            if "scripts" in pkg:
+#                asd = 0
+#                for sc in pkg['scripts']:
+#                    if vars.isdebug:
+#                        print(vars.debugc + "Key 'scripts' (" + str(asd) +
+#                              ") exist in JSON data, value: " + pkg['scripts'][sc])
+#                    rproject_scripts = pkg['scripts'][sc].join(rproject_scripts)
+#                     print(rproject_scripts)
+#                    asd = asd + 1
 
 
 def generateReadmeDotMd():
     getPackageDotJson()
     vars.prName = input(
-        Fore.GREEN+"√"+Fore.RESET+f" [🍭] Project name: {previewValues(vars.rproject_name)}")
+        vars.greenTick+f" [🍭] Project name: {previewValues(vars.rproject_name)}")
     if vars.prName == '' and vars.rproject_name != '':
         vars.prName = vars.rproject_name
     vars.prVersion = input(
-        Fore.GREEN+"√"+Fore.RESET+f" [🔖] Project version: {previewValues(vars.rproject_version)}")
+        vars.greenTick+f" [🔖] Project version: {previewValues(vars.rproject_version)}")
     if vars.prVersion == '' and vars.rproject_version != '':
         vars.prVersion = vars.rproject_version
     vars.prDescription = input(
-        Fore.GREEN+"√"+Fore.RESET+f" [📘] Project description: {previewValues(vars.rproject_description)}")
+        vars.greenTick+f" [📘] Project description: {previewValues(vars.rproject_description)}")
     if vars.prDescription == '' and vars.rproject_description != '':
         vars.prDescription = vars.rproject_description
     vars.prHomePage = input(
-        Fore.GREEN+"√"+Fore.RESET+f" [🏡] Project home page: {previewValues(vars.rproject_repository)}")
+        vars.greenTick+f" [🏡] Project home page: {previewValues(vars.rproject_repository)}")
     if vars.prHomePage == '' and vars.rproject_repository != '':
         vars.prHomePage = vars.rproject_repository
     elif vars.rproject_repository == '':
         vars.rproject_url = getGithubRepo(vars.prHomePage)
     vars.prDoscsUrl = input(
-        Fore.GREEN+"√"+Fore.RESET+f" [🌠] Project documentation url/page: {previewValues(vars.rproject_url)}")
+        vars.greenTick+f" [🌠] Project url/page: {previewValues(vars.rproject_url)}")
     if vars.prDoscsUrl == '' and vars.rproject_url != '':
         vars.prDoscsUrl = vars.rproject_url
+        vars.finalLicense = vars.prDoscsUrl + '/blob/master/LICENSE'
+        vars.finalIssues = vars.prDoscsUrl + '/issues'
+        vars.finalPulls = vars.prDoscsUrl + '/pulls'
+
     vars.prAuthorName = input(
-        Fore.GREEN+"√"+Fore.RESET+f" [🌍] Project Author name: {previewValues(vars.rproject_author)}")
+        vars.greenTick+f" [🌍] Project Author name: {previewValues(vars.rproject_author)}")
     if vars.prAuthorName == '' and vars.rproject_author != '':
         vars.prAuthorName = vars.rproject_author
     vars.prGithubUsername = input(
-        Fore.GREEN+"√"+Fore.RESET+f" [👤] Project Author GitHub username: {previewValues(vars.rproject_githubusr)}")
+        vars.greenTick+f" [👤] Project Author GitHub username: {previewValues(vars.rproject_githubusr)}")
     if vars.prGithubUsername == '' and vars.rproject_githubusr != '':
         vars.prGithubUsername = vars.rproject_githubusr
     vars.prWebSite = input(
-        Fore.GREEN+"√"+Fore.RESET+f" [💡] Project/Author web site: {previewValues('')}")
+        vars.greenTick+f" [💡] Project/Author web site: {previewValues('')}")
 
     vars.prLicenseName = input(
-        Fore.GREEN+"√"+Fore.RESET+f" [📝] Project license: {previewValues(vars.rproject_license)}")
+        vars.greenTick+f" [📝] Project license: {previewValues(vars.rproject_license)}")
     if vars.prLicenseName == '' and vars.rproject_license != '':
         vars.prLicenseName = vars.rproject_license
     vars.prLicenseUrl = input(
-        Fore.GREEN+"√"+Fore.RESET+f" [📝] Project license url: {previewValues('')}")
+        vars.greenTick+f" [📝] Project license url: {previewValues(vars.finalLicense)}")
 
-    vars.prIssuesUrl = input(Fore.GREEN+"√"+Fore.RESET+f"[📬] Project issues url: {previewValues('')}")
+    vars.prIssuesUrl = input(
+        vars.greenTick+f" [📬] Project issues url: {previewValues(vars.finalIssues)}")
+    if vars.prIssuesUrl == '' and vars.rproject_license != '':
+        vars.prIssuesUrl = vars.rproject_license
 
-    animated_loading('Loading the readme.md', 5)
+    animated_loading('  [💫] Loading the readme.md', 5)
     buildReadme.buildReadmeDotMd()
-    print("\r"+Fore.GREEN+"√"+Fore.RESET+" [📖] Readme Successfully Generated!")
+    print("\r"+vars.greenTick+" [📖] Readme Successfully Generated!")

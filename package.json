@@ -1,7 +1,7 @@
 {
     "name": "readme-generator",
-    "version": "1.0.5",
-    "description": "Simple readme generator",
+    "version": "1.0.6",
+    "description": "Simple readme generator that will help you creating thoose amazing repositories",
     "main": "main.py",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1"

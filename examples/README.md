@@ -39,7 +39,7 @@ This project is [ISC](https://github.com/IMXNOOBX/snooby/blob/master/LICENSE) li
 _Star this project ⭐️ if it helped you!_
 
 ***
-<p align="right">[💎](https://github.com/IMXNOOBX/readme-generator)</p>
+< align="right">[💎](https://github.com/IMXNOOBX/readme-generator)</p>
 
 
 <!-- Made with: https://github.com/IMXNOOBX/readme-generator - ISC - 2022 - IMXNOOBX -->
