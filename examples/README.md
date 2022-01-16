@@ -1,3 +1,4 @@
+
 <div align="center">
 [<a href='https://github.com/IMXNOOBX/snooby/releases'>Releases</a>]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[<a href='https://github.com/IMXNOOBX/snooby/issues'>Issues</a>]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[<a href='https://github.com/IMXNOOBX/snooby#readme'>Homepage</a>]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[<a href='https://github.com/IMXNOOBX/snooby/pulls'>Pull Request</a>]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[<a href='https://github.com/IMXNOOBX/snooby/wiki'>Wiki</a>]&nbsp;&nbsp;&nbsp;
 
@@ -14,15 +15,27 @@
 </a>
 </div>
         
+
 ## 📘 Description
 <div align="center">
 My main discord bot :D
 </div>
         
 ### 🏠 [Homepage](https://github.com/IMXNOOBX/snooby#readme)
+
+Visit this project repository [here](https://github.com/IMXNOOBX/snooby#readme) and let us know your opinion :D
         
 ## 🌠 [Documents](https://github.com/IMXNOOBX/snooby)
+
+Check out our documentation for more information!
+* Click Here -> [📚 Docs](https://github.com/IMXNOOBX/snooby) 
         
+
+## 🌟 Issues/Contribute
+
+* Report your issues here: [Report Here](https://github.com/IMXNOOBX/snooby/issues)
+* Contribute with your amazing ideas: [Contribute Here](https://github.com/IMXNOOBX/snooby/pulls)
+
 ## 👤 Author
 
  **IMXNOOBX**
@@ -39,7 +52,10 @@ This project is [ISC](https://github.com/IMXNOOBX/snooby/blob/master/LICENSE) li
 _Star this project ⭐️ if it helped you!_
 
 ***
-< align="right">[💎](https://github.com/IMXNOOBX/readme-generator)</p>
+<div align="right">
+<a href='https://github.com/IMXNOOBX/readme-generator'>💎</a>
+</div>
 
 
 <!-- Made with: https://github.com/IMXNOOBX/readme-generator - ISC - 2022 - IMXNOOBX -->
+    

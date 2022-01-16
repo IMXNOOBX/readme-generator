@@ -16,7 +16,7 @@
 </div>
 
 <div align="center">
-<img src="./readme-generator.png" alt="Readme Generator Banner" style="width:500px"></img>
+<img src="https://github.com/IMXNOOBX/readme-generator/raw/main/assets/readme-generator.png" alt="Readme Generator Banner" style="width:500px"></img>
 </div>
 
 ## 📘 Description

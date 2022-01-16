@@ -186,6 +186,6 @@ def generateReadmeDotMd():
     if vars.prIssuesUrl == '' and vars.rproject_license != '':
         vars.prIssuesUrl = vars.rproject_license
 
-    animated_loading('  [💫] Loading the readme.md', 5)
+    animated_loading('  [💫] Loading the readme.md', 3)
     buildReadme.buildReadmeDotMd()
     print("\r"+vars.greenTick+" [📖] Readme Successfully Generated!")

@@ -30,7 +30,7 @@ def buildReadmeDotMd():
 
     if vars.prHomePage != '':
         vars.finalReadme = vars.finalReadme + f"""
-### 🏠 [Homepage]({vars.prHomePage})
+## 🏠 [Homepage]({vars.prHomePage})
 
 Visit this project repository [here]({vars.prHomePage}) and let us know your opinion :D
         """
