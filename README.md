@@ -5,7 +5,7 @@
 </div>
 <div align="center">
 <a href="https://github.com/IMXNOOBX/readme-generator" title="">
-<img src="https://img.shields.io/badge/version-1.0.5-blue.svg?style=for-the-badge&logo=appveyor" alt="Version - 1.0.5">
+<img src="https://img.shields.io/badge/version-1.0.5-blue.svg?style=for-the-badge&logo=appveyor" alt="Version - 1.0.7">
 </a>
 <a href="https://github.com/IMXNOOBX/readme-generator" title="">
 <img src="https://img.shields.io/badge/documentation-yes-brightgreen.svg?style=for-the-badge" alt="Maintenance">
@@ -16,7 +16,7 @@
 </div>
 
 <div align="center">
-<img src="https://github.com/IMXNOOBX/readme-generator/raw/main/assets/readme-generator.png" alt="Readme Generator Banner" style="width:500px"></img>
+<img src="https://github.com/IMXNOOBX/readme-generator/raw/main/assets/readme-generator.png" alt="Readme Generator Banner"></img>
 </div>
 
 ## 📘 Description
